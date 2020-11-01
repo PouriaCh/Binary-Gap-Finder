@@ -21,7 +21,6 @@ class BinGapFinder:
                 lastOne = True
                 binGapsList.append(gapLength)
                 gapLength = 0
-                lastOne = False
             elif (binaryN[index] == "1" and ~firstOne and lastOne):
                 firstOne = True
                 lastOne = False
