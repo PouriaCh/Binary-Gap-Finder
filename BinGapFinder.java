@@ -1,18 +1,21 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
+import java.lang.ArithmeticException;
 
 class BinaryGapFinder {
-    // class Solution {
-    //     // public int solution(int N);
-    // } 
-
+    
     public static String numToBinary() {
         Scanner myScanner = new Scanner(System.in);
         System.out.println("Please enter a number: ");
         int N = myScanner.nextInt();
         myScanner.close();
-        return Integer.toBinaryString(N);
+        if (N >= 1 && N <= Integer.MAX_VALUE){
+            return Integer.toBinaryString(N);
+        }
+        else {
+            throw new ArithmeticException("The entered number is out of range!");
+        }
     }
 
     public static void main(String[] args) {
