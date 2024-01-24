@@ -8,6 +8,12 @@ The goal is to write a program that given a positive integer N, returns the leng
 
 For example, given N = 1041 the function should return 5, because N has binary representation 10000010001 and so its longest binary gap is of length 5. Given N = 32 the function should return 0, because N has binary representation '100000' and thus no binary gaps.
 
+## Running the code
+
+```
+python3 binary_gap_finder.py
+```
+
 ## Acknowledgement
 
-This repository provides the solution to the <em>BinaryGap</em> lesson from <a href="https://www.codility.com/">Codility</a>.
+This repository provides the solution to the *BinaryGap* lesson from [Codility](https://www.codility.com/).
